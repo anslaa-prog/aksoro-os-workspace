@@ -1,5 +1,6 @@
 // @ts-nocheck
 import React, { useState, useEffect, useMemo } from "react";
+import logoAksoro from '/logo-aksoro.png';
 import {
   LayoutGrid,
   Users,
@@ -104,7 +105,7 @@ const AksoroLogo = () => {
   return (
     <div className="relative inline-block select-none">
       <img 
-        src="https://i.postimg.cc/vZ2VzjBL/4-(1).png" 
+        src={logoAksoro}
         alt="Aksoro Business School" 
         style={{ maxWidth: '140px', width: '100%', height: 'auto' }}
         className="mx-auto block hover:scale-105 transition-transform duration-300"
@@ -117,7 +118,7 @@ const AksoroLogoSmall = () => (
   <div className="inline-flex items-center select-none shrink-0">
     <div className="flex items-center gap-2">
       <img 
-        src="https://i.postimg.cc/vZ2VzjBL/4-(1).png" 
+        src={logoAksoro} 
         alt="Aksoro Logo" 
         className="h-8 w-auto object-contain block hover:scale-105 transition-transform duration-300"
       />
