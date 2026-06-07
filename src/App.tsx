@@ -108,10 +108,6 @@ const AksoroLogo = () => {
         alt="Aksoro Business School" 
         style={{ maxWidth: '140px', width: '100%', height: 'auto' }}
         className="mx-auto block hover:scale-105 transition-transform duration-300"
-        onError={(e) => {
-          e.target.onerror = null;
-          e.target.src = "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=300&q=80";
-        }}
       />
     </div>
   );
@@ -124,10 +120,6 @@ const AksoroLogoSmall = () => (
         src="https://i.postimg.cc/vZ2VzjBL/4-(1).png" 
         alt="Aksoro Logo" 
         className="h-8 w-auto object-contain block hover:scale-105 transition-transform duration-300"
-        onError={(e) => {
-          e.target.onerror = null;
-          e.target.src = "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=300&q=80";
-        }}
       />
       <span className="font-extrabold text-sm tracking-tight text-[#291a0c] hidden sm:inline">Aksoro OS</span>
     </div>
