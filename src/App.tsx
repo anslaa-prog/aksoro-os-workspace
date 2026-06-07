@@ -129,32 +129,11 @@ const AksoroLogoSmall = () => (
 
 const USERS0 = [
   { id: 1, name: "Annisa Salsabila", username: "annisalsa", role: "super_admin", division: "People", opRole: "team_member", opDivision: "People", active: true, avatar: "AS", password: "SuperAdminAksoro2026!" },
-  { id: 2, name: "Rafi Santoso", username: "rafi", role: "super_admin", division: "CEO Office", opRole: "team_leader", opDivision: "CEO Office", active: true, avatar: "RS", password: "Admin@2025!" },
-  { id: 3, name: "Sinta Dewi", username: "sinta", role: "team_leader", division: "Marketing", opRole: null, opDivision: null, active: true, avatar: "SD", password: "Sinta@2025!" },
-  { id: 4, name: "Budi Pratama", username: "budi", role: "team_member", division: "Marketing", opRole: null, opDivision: null, active: true, avatar: "BP", password: "Budi@2025!" },
-  { id: 5, name: "Citra Lestari", username: "citra", role: "team_member", division: "People", opRole: null, opDivision: null, active: true, avatar: "CL", password: "Citra@2025!" },
-  { id: 6, name: "Dani Kurniawan", username: "dani", role: "team_leader", division: "People", opRole: null, opDivision: null, active: true, avatar: "DK", password: "Dani@2025!" },
-  { id: 7, name: "Eko Maulana", username: "eko", role: "team_member", division: "Sales & Service", opRole: null, opDivision: null, active: true, avatar: "EM", password: "Eko@2025!" },
-  { id: 8, name: "Hesti Lestari", username: "hesti", role: "team_leader", division: "FAT", opRole: null, opDivision: null, active: true, avatar: "HL", password: "Hesti@2025!" },
-  { id: 9, name: "Gibran Hakim", username: "gibran", role: "team_member", division: "Product & Partnership", opRole: null, opDivision: null, active: true, avatar: "GH", password: "Gibran@2025!" },
-  { id: 10, name: "Farhan Reza", username: "farhan", role: "team_leader", division: "Business", opRole: null, opDivision: null, active: true, avatar: "FR", password: "Farhan@2025!" },
-  { id: 11, name: "Linda Wahyuni", username: "linda", role: "team_member", division: "Event & Operations", opRole: null, opDivision: null, active: true, avatar: "LW", password: "Linda@2025!" },
 ];
 
 const buildTasks = () => {
   const td = todayISO();
-  return [
-    { id: 1, title: "Q2 Campaign Strategy Planning", division: "Marketing", status: "Ongoing", priority: "High", progress: 50, assignee: 4, created_by: 3, due: "2026-06-15", notes: "Fokus pada lead generation melalui kanal sosial media berbayar." },
-    { id: 2, title: "Social Media Content June Schedule", division: "Marketing", status: "To-Do", priority: "Medium", progress: 0, assignee: 4, created_by: 4, due: "2026-06-20", notes: "Penyusunan aset visual untuk Instagram, LinkedIn, & Tiktok." },
-    { id: 3, title: "Competitor Market Analysis Report", division: "Marketing", status: "Pending", priority: "High", progress: 33, assignee: 4, created_by: 3, due: "2026-06-10", notes: "Analisis model bisnis pesaing & perbandingan pricing plan." },
-    { id: 4, title: "Partner MOU Drafting & Legal Review", division: "Product & Partnership", status: "To-Do", priority: "Medium", progress: 0, assignee: 9, created_by: 2, due: "2026-06-22", notes: "MOU bersama partner strategis baru" },
-    { id: 5, title: "Leader Weekly Strategic Planning", division: "Marketing", status: "Ongoing", priority: "High", progress: 50, assignee: 3, created_by: 3, due: td, notes: "Fokus KPI Triwulan" },
-    { id: 6, title: "Client Relationship Management Framework", division: "Sales & Service", status: "Ongoing", priority: "Medium", progress: 0, assignee: 7, created_by: 3, due: td, notes: "SOP follow up client prospek" },
-    { id: 7, title: "Corporate Business Expansion Pitch", division: "Business", status: "Ongoing", priority: "High", progress: 100, assignee: 10, created_by: 2, due: "2026-06-12", notes: "Proposal kerja sama korporasi retail" },
-    { id: 8, title: "Recruitment SOP Framework Update", division: "People", status: "Ongoing", priority: "High", progress: 50, assignee: 5, created_by: 6, due: "2026-06-12", notes: "SOP wawancara user baru" },
-    { id: 9, title: "New Employee Onboarding Checklist", division: "People", status: "Done", priority: "Medium", progress: 100, assignee: 1, created_by: 1, due: "2026-06-08", notes: "Automated inside Notion" },
-    { id: 10, title: "Annual Gala Operations Venue Setup", division: "Event & Operations", status: "To-Do", priority: "High", progress: 0, assignee: 11, created_by: 2, due: td, notes: "Koordinasi dengan pihak venue hotel" }
-  ].map(t => ({
+  return [].map(t => ({
     ...t,
     logs: [{ user: "System", action: "Created task baseline", ts: "Jun 1, 09:00" }]
   }));
